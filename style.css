@@ -5,64 +5,62 @@ nav {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 body {
+
     background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.flex-container1 {
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
+.index-1 {
+    
+    padding: 20px;
     background-color: black;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold; 
-    line-height: 1;
-    letter-spacing: 1px;
-    
+    line-height: 0.1;
 }
 
 
-.flex-container2 {
+.flex-container1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 40px;
     background-color: black;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
-.button1 {
-    margin: 20px;
-    
-}
-
-button {
-    padding: 15px;
+.dropdownbutton-1 {
+    padding: 20px;
+    border: black 2px solid;
+    box-sizing: border-box;
     border-radius: 30px;
-    background-color: pink;
 }
 
-.flex-container3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px;
+.dropdownbutton-2 {
+    padding: 20px;
+    border: black 2px solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.index-2 {
     text-align: center;
-    font-size: 80px;
-    font-weight: bold
-    
-}
-h1 {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
-
+    line-height: 0.1;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
-main {
+
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -73,76 +71,137 @@ footer {
 
 }
 
-.flex-container4 {
-    padding: 80px;
-}
-
 .flex-container5 {
-    padding: 10px;
+    padding: 20px;
+    margin-left: 180px;
+    margin-right: 150px;
     text-align: center;
     border-top: solid 1px white;
-        
 }
 
 .grid-container1 {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 100px  50px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
     gap: 10px;
     padding: 10px;
+    margin-left: 180px;
+    margin-right: 150px;
 }
 
 .item-1 {
-    grid-column: 2/span 6;
+    grid-column: 1/span 5;
     text-align: left;
 }
 .item-2 {
+    grid-column: 6;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.item-2 :hover {
+    color: salmon;
+}
+
+.item-3 {
+    grid-column: 7;
+    text-align: left;
+    font-weight: bold;
+}
+
+.item-3 :hover {
+    color: salmon;
+}
+
+.item-4 {
     grid-column: 8;
     text-align: left;
     font-weight: bold;
-    
 }
-.item-3 {
-    grid-column: 9;
-    text-align: left;
+
+.dropdownbutton-0 {
+    background-color: black;
+    color: white;
     font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box ;
+    border: solid 2px white;
+    border-radius: 30px;
 }
-.item-4 {
-    grid-column: 10;
-    text-align: left;
+
+.dropdownbutton-0:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdownbutton-1 {
+    background-color: hotpink;
+    color: black;
     font-weight: bold;
+    padding: 17px;
+    box-sizing: border-box ;
+    border: solid 2px black;
+    border-radius: 30px;
 }
+
+.dropdownbutton-2 {
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bold;
+    padding: 17px;
+    box-sizing: border-box ;
+    border: solid 2px black;
+    border-radius: 30px;
+}
+
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200 350;
-    padding: 60px 20px;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200 ;
+    margin-left: 180px;
+    margin-right: 150px;
     gap: 10px;
-}.item-5 {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.item-5 {
+    grid-column: 1;
+    text-align: left;
+}
+
+.item-6 {
     grid-column: 2;
     text-align: left;
 }
-.item-6 {
+
+.item-7 {
     grid-column: 3;
     text-align: left;
+    line-height: 2;
 }
-.item-7 {
+.item-7 a {
+    display: block;
+}
+
+.item-8 {
     grid-column: 4;
     text-align: left;
     line-height: 2;
-    
 }
-.item-8 {
+.item-8 a {
+    display: block;
+}
+.item-9 {
     grid-column: 5;
     text-align: left;
     line-height: 2;
 }
-.item-9 {
-    grid-column: 6;
-    text-align: left;
-    line-height: 2;
+
+.item-9 a {
+    display: block;
 }
 
 .careers-0 {
@@ -155,22 +214,41 @@ footer {
     text-align: center;
     font-weight: bold;
     color: white;
+    font-size: 35px;
+    line-height: 0.4;
 }
 
 .careers-2 {
     text-align: center;
     color: white;
+    font-size: 19px;
+    line-height: 0.5;
 }
 .careers-3 {
     text-align: center;
     color: white;
+    padding-bottom: 130px;
+    padding-top: 60px;
+    
+}
+.dropdownbutton-4 {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
+.dropdownbutton-4:hover {
+    background-color: orange;
+    color: white;
+}
 .grid-container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 300px;
-    padding: 50px;
+    padding: 10px;
     gap: 10px;
 }
 
@@ -190,93 +268,183 @@ footer {
 
 }
 
+.careers-1 {
+    text-align: center;
+    line-height: 0.5;
+}
+
+span {
+    color: orange;
+}
+
 .careers-4 {
     text-align: center;
     font-weight: bold;
-    line-height: 1;
+    font-size: 35px;
+    line-height: 0.4;
 }
 
 .careers-5 {
     text-align: center;
-    line-height: 1;
+    line-height: 0.5;
+    font-size: 19px;
+    padding-bottom: 90px;
+}
+
+.careers-6 {
+    color: orange;
+    font-size: 21px;
+    margin-left: 110px;
+
+}
+
+.careers-7 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.1;
+    margin-left: 110px;
+
 }
 
 .careers-8 {
     color: orange;
     text-align: center;
+    font-size: 18px;
 }
 
 .careers-9 {
     text-align: center;
+    font-size: 35px;
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.4;
+    padding-bottom: 20px;
+}
+
+.form-element1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 500px;
 }
 
 
 
 .grid-container4 {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 100px  50px;
-    gap: 10px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
     padding: 10px;
+    margin-left: 180px;
 }
 
 .item-18 {
-    grid-column: 2/span 6;
+    grid-column: 1/span 4;
     text-align: left;
-}
-.item-19 {
-    grid-column: 8;
-    text-align: left;
-    font-weight: bold;
     
 }
-.item-20 {
-    grid-column: 9;
+.item-19 {
+    grid-column: 5;
     text-align: left;
     font-weight: bold;
+    font-size: 17px;
+    
 }
-.item-21 {
-    grid-column: 10;
-    text-align: left;
-    font-weight: bold;
+.item-19 :hover {
+    color: salmon;
 }
 
+.item-20 {
+    grid-column: 6;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.item-20 :hover {
+    color: salmon;
+}
+
+
+.item-21 {
+    grid-column: 7;
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.dropdownbutton-3 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    box-sizing: border-box ;
+    border: solid 2px white;
+    border-radius: 30px;
+}
+
+.dropdownbutton-3:hover {
+    background-color: white;
+    color: black;
+}
 
 .grid-container5 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px;
-    padding: 60px 20px;
+    padding-top: 120px;
+    padding-bottom: 10px;
     gap: 10px;
+    margin-left: 180px;
+    margin-right: 100px;
+    font-size: 14px;
 }
 .item-13 {
-    grid-column: 2;
+    grid-column: 1;
     text-align: left;
 }
 .item-14 {
-    grid-column: 3;
+    grid-column: 2;
     text-align: left;
 }
 .item-15 {
-    grid-column: 4;
+    grid-column: 3;
     text-align: left;
     line-height: 2;
     
 }
+
+.item-15 a {
+    display: block;
+
+}
 .item-16 {
+    grid-column: 4;
+    text-align: left;
+    line-height: 2;
+}
+
+.item-16 a {
+    display: block;
+
+}
+.item-17 {
     grid-column: 5;
     text-align: left;
     line-height: 2;
 }
-.item-17 {
-    grid-column: 6;
-    text-align: left;
-    line-height: 2;
+.item-17 a {
+    display: block;
+
 }
+
 .flex-container6 {
-    padding: 10px;
+    margin-left: 180px;
+    margin-right: 150px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    font-size: 14px;
     text-align: center;
     border-top: solid 1px white;
 }
@@ -284,62 +452,78 @@ footer {
 
 .grid-container6 {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 150px  150px;
-    padding: 40px;
+    margin-left: 180px;
+    margin-right: 150px;
+    
 }
 
 .item-22 {
     grid-column: 1;
     grid-row: 1;
     text-align: right;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .item-23 {
-    grid-column: 2/span 3;
+    grid-column: 2/span 2;
     grid-row: 1;
     text-align: left;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .item-24 {
     grid-column: 5;
     grid-row: 1;
     text-align: right;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .item-25 {
-    grid-column: 6/span 3;
+    grid-column: 6/span 2;
     grid-row: 1;
     text-align: left;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .item-26 {
     grid-column: 1;
     grid-row: 2;
     text-align: right;
-    line-height: 1;
+    line-height: 1.2;
 }
 .item-27 {
-    grid-column: 2/span 3;
+    grid-column: 2/span 2;
     grid-row: 2;
     text-align: left;
-    line-height: 1;
+    line-height: 1.2;
 }
 .item-28 {
     grid-column: 5;
     grid-row: 2;
     text-align: right;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .item-29 {
-    grid-column: 6/span 3;
+    grid-column: 6/span 2;
     grid-row: 2;
     text-align: left;
+    line-height: 1.2;
+}
+
+
+.dropdown-1 a {
+    display: block;
+    margin-left: 180px;
+    margin-right: 150px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 1;
+    border-bottom:  solid 1px white;
+    
 }
 
